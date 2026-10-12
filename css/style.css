@@ -1,3 +1,4 @@
+/* Estilos generales y tipografía */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,11 +8,13 @@ body {
     line-height: 1.6;
 }
 
+/* Cabecera con borde inferior */
 header {
     background-color: #1a221e;
     padding: 30px 20px;
     text-align: center;
-    border-bottom: 3px solid #3b5344;
+    border-bottom: 4px solid #3b5344;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -26,36 +29,50 @@ header p {
     margin-top: 10px;
 }
 
-main, section {
+/* Contenedor principal */
+main {
     padding: 30px 20px;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
-    text-align: left;
 }
 
+/* Secciones con tarjetas y bordes profesionales */
+.card {
+    background-color: #181f1b;
+    border: 2px solid #2e4036;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Títulos con borde inferior decorativo */
 h2 {
     color: #62947d;
-    border-bottom: 2px solid #2a3831;
+    border-bottom: 2px solid #3b5344;
     padding-bottom: 8px;
+    margin-top: 0;
 }
 
 p, li {
     font-size: 1.1rem;
 }
 
+/* Lista con bordes y viñetas cuidadas */
 ul {
-    background-color: #1a1e22;
+    background-color: #121714;
+    border: 1px solid #2e4036;
     padding: 20px 40px;
     border-radius: 8px;
     list-style-type: square;
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
-/* Contenedor de la galería para adaptarlo en computadores y celulares */
-section div {
+/* Galería y alineación de imágenes */
+.gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -63,20 +80,28 @@ section div {
     margin-top: 15px;
 }
 
+/* Imágenes con bordes destacados y ajuste */
 img {
     width: 100%;
     max-width: 240px;
     height: 180px;
     object-fit: cover;
-    border-radius: 6px;
-    border: 2px solid #3b5344;
+    border-radius: 8px;
+    border: 3px solid #62947d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s ease;
 }
 
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Pie de página con borde superior */
 footer {
     background-color: #0b0e0c;
     text-align: center;
     padding: 20px;
     color: #7b8a82;
     margin-top: 40px;
-    border-top: 1px solid #1a221e;
+    border-top: 2px solid #1a221e;
 }
